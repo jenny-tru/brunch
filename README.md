@@ -1,2 +1,3 @@
 # brunch
-searches for brunch places in a zip code
+
+searches for brunch places in a location
