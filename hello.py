@@ -1,8 +1,8 @@
 from pip._vendor.distlib.compat import raw_input
 
 print ('hello world')
-name = raw_input("What is your name? ")
-date = raw_input("What is today's date? ")
-color = raw_input("What is your favorite color? ")
+name = raw_input("Enter a zip code: ")
+date = raw_input("What day would you like to search hours for? ")
+color = raw_input("Do you want to also search for bottomless drink deals? ")
 
-print (("Hello %s, today's date is %s, and your favorite color is %s.") % (name, date, color))
+print (("We are searching for resturants near %s, on %s, and %s for drink deals.") % (name, date, color))
