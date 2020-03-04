@@ -1,4 +1,5 @@
-# brunch
+# brunch app that searches by location to find hours and drink deals
 
-this application searches for brunch places in a location (zip code) 
--using python to web scrape 
+-search for places in a location (zip code) 
+-use python to web scrape
+- 
