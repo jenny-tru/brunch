@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 def get_website(url):
     """Attemptes to get content at url with HTTP get req and return content """
     page = requests.get('https://orlandoairports.net/')
+    soup = BeautifulSoup(page.content, 'html.parser')
     print(page)
 
     if response is not None:
