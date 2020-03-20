@@ -3,15 +3,24 @@
 import requests
 from bs4 import BeautifulSoup
 
-def get_website(url):
-    """Attemptes to get content at url with HTTP get req and return content """
-    page = requests.get('https://orlandoairports.net/')
-    soup = BeautifulSoup(page.content, 'html.parser')
-    print(page)
+url = 'https://www.monster.com/jobs/search/?q=Software-Developer&where=Australia'
+page = requests.get(url)
+soup = BeautifulSoup(page.content, 'html.parser')
+results = soup.find(id='ResultsContainer')
+print(results.prettify())
 
-    if response is not None:
-        html = BeautifulSoup(response, 'html.parser')
-        print(html)
+
+
+""" 
+def get_website(url):
+    #Attemptes to get content at url with HTTP get req and return content
+    page = requests.get('https://orlandoairports.net/')
+    soup = BeautifulSoup(page.content, 'html5lib')
+    # print(soup)
+    wait_time = []
+    # soup.find()
+    return;
+ """
 
 def log_error(e):
     """Prints out error if occurs"""
